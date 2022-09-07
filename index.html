@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> My task board</h1>
+
+    <div class="container">
+        <div class="row">
+
+            <div id="formArea" class="col-12 col-sm-12 col-md-11 col-lg-8 col-xl-7">
+                <div class="col-12">
+                    <label for="" style="margin-left: 2px;">Enter task here :</label> &nbsp;
+                    <input type="text" id="task">
+                </div>
+
+                <div class="col-12">
+                    <label for=""> Enter deu date :</label> &nbsp;
+                    <input type="date" id="date">
+                </div>
+
+                <div class="col-12">
+                    <label for="">Enter deu time :</label> &nbsp;
+                    <input type="time" id="time">
+                </div>
+
+                <div id="buttons" class="col-12">
+                    <button onclick="saveNote()" id="save">
+                        save
+                    </button>
+
+                    <button onclick="resetForm()" id="reset">
+                        reset
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div id="resultArea" class="row"></div>
+        
+    </div>
+
+
+    
+    <script src="note.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

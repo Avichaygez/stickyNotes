@@ -1,0 +1,304 @@
+html, body {
+    text-align: center;
+    margin: auto;
+    background-image: url(assets/image/tile.jpg);
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: rgb(190, 72, 72);
+    border-radius: 20px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(245, 0, 0);  
+}
+
+
+h1 {
+    font-size: 80px;
+    font-family: 'wallNotes';
+    margin-bottom: 0px;
+}
+
+
+#formArea {
+    background-image: url(assets/image/formbg.jpg);
+    background-repeat: inherit;
+    background-color: blue;
+    text-align: left;
+    margin: auto;
+    width: 40%;
+    padding-left: 6%;
+    padding-top: 1.5%;
+
+}
+
+#formArea input {
+    width: 68%;
+    margin-bottom: 42px;
+    resize: none;
+    border: 0ch;
+    background-color: unset;
+
+}
+
+#formArea button {
+    width: 14.6%;
+    margin-top: 5%;
+    background-color: unset;
+}
+
+#save {
+    margin-right: 69%;
+}
+
+
+#resultArea {
+    text-align: left;
+}
+
+#resultArea>div {
+    width: 12%;
+    height: 400px;
+}
+
+.noteArea {
+    display: inline-block;
+    background-image: url(assets/image/notebg-removebg-preview.png);
+    background-repeat: no-repeat;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.noteArea span {
+    margin-top: 10%;
+    margin-right: 0%;
+    font-weight: 700;
+    float: right;
+    display: none;
+    text-align: right;
+}
+
+.noteArea:hover span {
+    display: inline;
+}
+
+
+.taskArea {
+    margin-top: 25%;
+    margin-left: 1%;
+    height: 35%;
+    overflow-y: scroll;
+    word-wrap: break-word;
+}
+
+.fadeIN {
+    animation: fadeIn ease 5s;
+ 
+}
+
+.taskArea::-webkit-scrollbar {
+    width: 4px;
+}
+
+.taskArea::-webkit-scrollbar-track {
+    border-radius: 2px;
+}
+
+.taskArea::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+}
+
+
+.dateAndTimeArea {
+    margin-left: 1%;
+    margin-top: 0%;
+}
+
+
+@font-face {
+    font-family: "wallNotes";
+    src: url("assets/Fonts/wall_notes/Wall\ Notes.otf");
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 50px;
+        font-family: 'wallNotes';
+        margin-bottom: 0px;
+    }
+
+    #formArea {
+        background-image: url(assets/image/formbg.jpg);
+        background-repeat: inherit;
+        text-align: left;
+        margin: auto;
+        padding-left: 12%;
+        padding-top: 3.5%;
+        max-height: 90%;
+        max-width: 99%;
+    }
+
+    #formArea button {
+        width: 14.6%;
+        margin-top: 6.9%;
+        background-color: unset;
+        max-height: 90%;
+    }
+
+    #formArea input {
+        width: 68%;
+        margin-bottom: 42px;
+    }
+
+    #save {
+        margin-right: 69%;
+    }
+    .noteArea {
+
+        margin-left: 30px;
+       
+    }
+
+}
+
+
+@media screen and (min-width: 576px) and (max-width:768px) {
+    h1 {
+        font-size: 50px;
+        font-family: 'wallNotes';
+    }
+
+    #formArea {
+        background-image: url(assets/image/formbg.jpg);
+        background-repeat: inherit;
+        text-align: left;
+        margin: auto;
+        padding-left: 11%;
+        padding-top: 3.5%;
+    }
+
+    #formArea button {
+        width: 14.6%;
+        margin-top: 6.5%;
+        background-color: unset;
+    }
+
+    #formArea input {
+        width: 68%;
+        margin-bottom: 41px;
+    }
+
+    #save {
+        margin-right: 69%;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    h1 {
+        font-size: 70px;
+        font-family: 'wallNotes';
+    }
+
+    #formArea {
+        background-image: url(assets/image/formbg.jpg);
+        background-repeat: inherit;
+        text-align: left;
+        margin: auto;
+        padding-left: 9%;
+        padding-top: 3%;
+    }
+
+    #formArea button {
+        width: 14.6%;
+        margin-top: 5%;
+        background-color: unset;
+    }
+
+    #formArea input {
+        width: 68%;
+        margin-bottom: 41px;
+    }
+
+    #save {
+        margin-right: 69%;
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    #formArea {
+        background-image: url(assets/image/formbg.jpg);
+        background-repeat: inherit;
+        text-align: left;
+        margin: auto;
+        padding-left: 7%;
+        padding-top: 2%;
+    }
+
+    #formArea button {
+        width: 14.6%;
+        margin-top: 6%;
+        background-color: unset;
+    }
+
+    #formArea input {
+        width: 68%;
+        margin-bottom: 41px;
+    }
+
+    #save {
+        margin-right: 69%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) and (max-width:1400px) {
+    #formArea {
+        background-image: url(assets/image/formbg.jpg);
+        background-repeat: inherit;
+        text-align: left;
+        margin: auto;
+        padding-left: 7%;
+        padding-top: 1.5;
+    }
+
+    #formArea button {
+        width: 14.6%;
+        margin-top: 6%;
+        background-color: unset;
+    }
+
+    #formArea input {
+        width: 68%;
+        margin-bottom: 41px;
+    }
+
+    #save {
+        margin-right: 69%;
+    }
+}
